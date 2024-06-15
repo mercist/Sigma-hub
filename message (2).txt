@@ -3735,15 +3735,15 @@ local Button = MainTab:CreateButton({
  })
 
  local Slider = TeleportTab:CreateSlider({
-    Name = "speed slidder (only increase a little bit at a time and i mean a little bit)",
+    Name = "speed slidder (CANNOT BE DECREASED)",
     Range = {0,1},
     Increment = 0.000000000000000000000000000000000000000000000000000000000000000000001,
     Suffix = "Speed test",
-    CurrentValue = 1.1,
+    CurrentValue = 0,
     Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
         getgenv().TpWalking = true
-        getgenv().Speed = 0.3
+        getgenv().Speed = 0.02
          
         local speaker = game:GetService("Players").LocalPlayer
         local chr = speaker.Character
