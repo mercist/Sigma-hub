@@ -1975,6 +1975,7 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+
  local Button = MainTab:CreateButton({
     Name = "Phantom Forces Silent aim + esp",
     Callback = function()
@@ -3795,4 +3796,11 @@ local Button = MainTab:CreateButton({
 
  local PhantomTab = Window:CreateTab("?", nil) -- Title, Image
  local PhantomSection = PhantomTab:CreateSection("?")
+
+ local PhantomTab = Window:CreateTab("Info", nil) -- Title, Image
+ local PhantomSection = PhantomTab:CreateSection("what do i do?")
+
+    local Paragraph = PhantomTab:CreateParagraph({Title = "What the hell are these section's?", Content = "In [ Sigma GUI's] i have put together some scripts as easy as that. In the [ Misc ] section i have mostly scripts that do not have any sort of GUI which is why There's a Misc section."})
+
+        local Paragraph = PhantomTab:CreateParagraph({Title = "Legitinality?", Content = "Legitinality is a Criminality GUI half of the toggles are broken but the important ones work such as Aimbot/aimlock which you can toggle in firstPerson by click y to toggle it on and off (true=on and false=off) theres Player, Register/Safe and Dealer Esp  (note: the Inf Staminia may or maynot work.)"})
 
