@@ -18,11 +18,11 @@ local Window = Rayfield:CreateWindow({
     KeySettings = {
        Title = "key system",
        Subtitle = "Locked",
-       Note = "Updated! Whats fixed/new: The slider has been fixed (but you still cannot decrease it",
+       Note = "Updated V.2,5! Whats fixed/new: Legitinality ESP font size + More info (MOSTLY QUALITY OF LIFE UPGRADES)",
        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
        SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-       Key = {"password"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+       Key = {"Update! V.2,5"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
 
@@ -232,7 +232,7 @@ local Window = Rayfield:CreateWindow({
                 WarningMessage.Position = UDim2.new(0.257703096, 0, 0.09649124, 0)
                 WarningMessage.Size = UDim2.new(0, 200, 0, 50)
                 WarningMessage.Font = Enum.Font.SourceSans
-                WarningMessage.Text = "Warning Please Activate No Fall Damage When Using Teleports"
+                WarningMessage.Text = "Warning dont use fling while using teleports"
                 WarningMessage.TextColor3 = Color3.fromRGB(0, 0, 0)
                 WarningMessage.TextSize = 14.000
         
@@ -242,7 +242,7 @@ local Window = Rayfield:CreateWindow({
                 TowerButton.Position = UDim2.new(0.044817932, 0, 0.657894731, 0)
                 TowerButton.Size = UDim2.new(0, 94, 0, 33)
                 TowerButton.Font = Enum.Font.SourceSans
-                TowerButton.Text = "Tower "
+                TowerButton.Text = "Tower"
                 TowerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
                 TowerButton.TextSize = 14.000
                 TowerButton.MouseButton1Down:connect(
@@ -297,7 +297,7 @@ local Window = Rayfield:CreateWindow({
                 ATM.Position = UDim2.new(0.683473408, 0, 0.315789461, 0)
                 ATM.Size = UDim2.new(0, 94, 0, 33)
                 ATM.Font = Enum.Font.SourceSans
-                ATM.Text = "Far ATM"
+                ATM.Text = "A1 ATM"
                 ATM.TextColor3 = Color3.fromRGB(255, 255, 255)
                 ATM.TextSize = 14.000
                 ATM.MouseButton1Down:connect(
@@ -1524,7 +1524,7 @@ local Window = Rayfield:CreateWindow({
         
                 local sizingFactor = 3.5
                 local PlayerESPBoxes = {
-                    Thickness = 1,
+                    Thickness = 0.6,
                     Visible = false,
                     Color = Color3.new(1, 1, 1),
                     Filled = false
@@ -1534,7 +1534,7 @@ local Window = Rayfield:CreateWindow({
                     Color = Color3.new(1, 1, 1),
                     Outline = true,
                     Font = 3,
-                    Size = 20,
+                    Size = 16,
                     Center = false,
                     Visible = false, -- these 2 don't matter, they get overwritten
                     Position = Vector2.new()
@@ -1545,9 +1545,9 @@ local Window = Rayfield:CreateWindow({
                     -- (same shit as above)
                     Color = Color3.new(1, 1, 1),
                     Outline = true,
-                    Size = 20,
+                    Size = 15,
                     Font = 3,
-                    Size = 20,
+                    Size = 15,
                     Center = false,
                     Visible = false, -- these 2 don't matter, they get overwritten
                     Position = Vector2.new()
@@ -1558,7 +1558,7 @@ local Window = Rayfield:CreateWindow({
                     -- (same shit as above)
                     Color = Color3.new(218 / 255, 165 / 255, 32 / 255), -- fromRGB who?
                     Outline = true,
-                    Size = 20,
+                    Size = 18,
                     Center = false,
                     Visible = false, -- these 2 don't matter, they get overwritten
                     Position = Vector2.new()
@@ -3794,13 +3794,16 @@ local Button = MainTab:CreateButton({
     end,
  })
 
- local PhantomTab = Window:CreateTab("?", nil) -- Title, Image
- local PhantomSection = PhantomTab:CreateSection("?")
-
  local PhantomTab = Window:CreateTab("Info", nil) -- Title, Image
  local PhantomSection = PhantomTab:CreateSection("what do i do?")
 
     local Paragraph = PhantomTab:CreateParagraph({Title = "What the hell are these section's?", Content = "In [ Sigma GUI's] i have put together some scripts as easy as that. In the [ Misc ] section i have mostly scripts that do not have any sort of GUI which is why There's a Misc section."})
 
         local Paragraph = PhantomTab:CreateParagraph({Title = "Legitinality?", Content = "Legitinality is a Criminality GUI half of the toggles are broken but the important ones work such as Aimbot/aimlock which you can toggle in firstPerson by click y to toggle it on and off (true=on and false=off) theres Player, Register/Safe and Dealer Esp  (note: the Inf Staminia may or maynot work.)"})
+
+        local Paragraph = PhantomTab:CreateParagraph({Title = "What is This Fling GUI?", Content = "The fling Gui is justa Gui thats designed to fling people in games that have collision on it works in almost every game so people have asked what the dino anim and stuff is dont mind any of that its not supposed to be used all you need to know is the fling the standard power is 1000-9999 so just have fun and go wild"})
+
+        local Paragraph = PhantomTab:CreateParagraph({Title = "What is Sigmanality", Content = "Is a pretty good script with many esp options suck as health esp box esp and literally just their avatar will glow thru wall and it includes a jump And theres a anti gravity jump option which makes you feel like you're on the moon"})
+
+        local Paragraph = PhantomTab:CreateParagraph({Title = "What is The strongest sigma grounds?", Content = "it is mostly teleports"})
 
