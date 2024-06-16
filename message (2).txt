@@ -1558,7 +1558,7 @@ local Window = Rayfield:CreateWindow({
                     -- (same shit as above)
                     Color = Color3.new(218 / 255, 165 / 255, 32 / 255), -- fromRGB who?
                     Outline = true,
-                    Size = 18,
+                    Size = 16,
                     Center = false,
                     Visible = false, -- these 2 don't matter, they get overwritten
                     Position = Vector2.new()
