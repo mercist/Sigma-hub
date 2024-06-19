@@ -3947,7 +3947,7 @@ local Button = MainTab:CreateButton({
  })
 
  local Button = TeleportTab:CreateButton({
-    Name = "Invisible toggle",
+    Name = "Invisible toggle (anticheat will fuck you in crim)",
     Callback = function()
         local ScriptStarted = false
 local Keybind = "E" --Set to whatever you want, has to be the name of a KeyCode Enum.
@@ -4100,7 +4100,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Invisible
  })
 
  local Button = TeleportTab:CreateButton({
-    Name = "WallBang",
+    Name = "WallBang (works only thru 1-2 walls)",
     Callback = function()
         game:service[[Workspace]]:FindFirstChild('Map'):FindFirstChild('Parts'):FindFirstChild('M_Parts').Parent = game:service[[Workspace]]:FindFirstChild('Characters')
  
@@ -4121,9 +4121,9 @@ game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Invisible
 
         local Paragraph = PhantomTab:CreateParagraph({Title = "What is The strongest sigma grounds?", Content = "it is mostly teleports"})
 
-        local Paragraph = PhantomTab:CreateParagraph({Title = "(NEW) What is this ''WallBang'' Script?", Content = "WallBang is a script that lets you shot thru a wall which can help in many Situations. Such as ''if someone locks you out of a building you can just shoot them thru the door or the wall.''"})
+        local Paragraph = PhantomTab:CreateParagraph({Title = "(NEW) What is this ''WallBang'' Script?", Content = "WallBang is a script that lets you shot thru a wall which can help in many Situations. Such as (if someone locks you out of a building you can just shoot them thru the door or the wall.) (only shoots thru 1-2 walls)"})
 
-        local Paragraph = PhantomTab:CreateParagraph({Title = "(NEW) What is a Invisible toggle script?", Content = "It is just what it says in the name its a script that makes you invisible but unable to shoot so you cant shoot but they cant see you or shoot you (THE TOGGLE BUTTON IS E)"})
+        local Paragraph = PhantomTab:CreateParagraph({Title = "(NEW) What is a Invisible toggle script?", Content = "It is just what it says in the name its a script that makes you invisible but unable to shoot so you cant shoot but they cant see you or shoot you (DONT USE IN CRIM THE ANTICHEAT WILL BREAK UR GAME) (THE TOGGLE BUTTON IS E)"})
 
         local Paragraph = PhantomTab:CreateParagraph({Title = "(NEW) What is CrimSkid Hub?", Content = "CrimSkid Is just a Cheat hub. Some of its script work some dont as simple as that"})
 
