@@ -44,6 +44,8 @@ local Window = Rayfield:CreateWindow({
  },
  })
 
+ 
+
  local Button = MainTab:CreateButton({
     Name = "legitinality",
     Callback = function()
@@ -1558,7 +1560,7 @@ local Window = Rayfield:CreateWindow({
                     -- (same shit as above)
                     Color = Color3.new(218 / 255, 165 / 255, 32 / 255), -- fromRGB who?
                     Outline = true,
-                    Size = 16,
+                    Size = 18,
                     Center = false,
                     Visible = false, -- these 2 don't matter, they get overwritten
                     Position = Vector2.new()
@@ -1972,6 +1974,147 @@ local Window = Rayfield:CreateWindow({
                 end
             end
         end
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
+    Name = "CrimSkid Hub",
+    Callback = function()
+        local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("Crim Skid V2")
+
+local serv = win:Server("Crimskid V2", "")
+
+local btns = serv:Channel("Personal Best")
+local btnss = serv:Channel("Aimlocks")
+local btnsss = serv:Channel("ESPS")
+local btnssss = serv:Channel("Hubs")
+local btnsssss = serv:Channel("Other")
+
+--------------------------------------------1----------------------
+btns:Button("Aimlock", function()
+ loadstring(game:HttpGet("https://pastebin.com/raw/Tfey2JbA"))()
+DiscordLib:Notification("Notification", "Prediction 100 Distance 100-1000. HOTKEY Q", "Okay!")
+end)
+
+
+btns:Button("FullBright", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/vMEADuA2"))()
+end)
+
+btns:Button("Vault + Cash Register Esp", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/wtpbN7dz"))()
+end)
+--2--
+btnss:Button("Customizable Lock (The One I Use)", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Tfey2JbA"))()
+end)
+
+btnss:Button("My Freinds Lock (OP)", function()
+loadstring(game:HttpGet("https://controlc.com/raw/f34f3bce"))()
+end)
+
+btnss:Button("Rainbow Lock", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/SgTvDfd9"))()
+end)
+
+--3
+------------------------------------------------------------------
+
+btnsss:Button("Simple Box Esp (0x83)", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/TcFNCtdU"))()
+end)
+
+btnsss:Button("Name Esp", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/TcFNCtdU"))()
+end)
+
+btnsss:Button("Chams", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/TcFNCtdU"))()
+end)
+
+btnsss:Button("Vault + Cash Register Esp", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/wtpbN7dz"))()
+end)
+
+btnsss:Button("Wally Hub Esp", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/criminality_esp.lua"))()
+end)
+
+btnsss:Button("Skeleton Esp", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/WQfTkiMW"))()
+end)
+
+btnsss:Button("Tracers And Names (Clean)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fernandoagoncalves/universal-esp/main/esp.lua", true))()
+end)
+
+
+--HUBS
+
+---------------------------------------------------------------------
+
+btnssss:Button("Temporal X v2.0.3", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/w2S8YyDt", true))()
+end)
+
+btnssss:Button("Owl Hub (Right Click)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+btnssss:Button("Esp And Aimbot (Cool Pro Hax)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/UNIVERSAL.lua"))()
+end)
+
+btnssss:Button("Bliss Hub Esp", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cornyllius/ESPs/main/BlissESP.lua", true))()
+end)
+
+btnssss:Button("Fates Esp Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-esp/main/main.lua"))()
+end)
+
+
+--OTHERS
+---------------------------------------------------------------------
+
+
+btnsssss:Button("Die", function()
+    game.Players.LocalPlayer.Character.Humanoid:Destroy()
+end)
+    
+btnsssss:Button("Hitbox Expander", function()
+loadstring(game:HttpGet("https://pastebin.com/dfx7Ckee"))()
+end)
+
+btnsssss:Button("FreeCam (Shift + P)", function()
+loadstring(game:HttpGet("https://pastebin.com/1EVWf5mr"))()
+end)
+
+btnsssss:Button("RTX (Laggy for bad pcs)", function()
+loadstring(game:HttpGet("https://pastebin.com/1EVWf5mr"))()
+end)
+
+btnsssss:Button("Freeze Urself", function()
+loadstring(game:HttpGet("https://pastebin.com/CK1xGpBi"))()
+end)
+
+btnsssss:Button("Ctrl Tp (Doesnt Work)", function()
+loadstring(game:HttpGet("https://pastebin.com/mwE1iva5"))()
+end)
+
+btnsssss:Button("Chat Spy", function()
+loadstring(game:HttpGet("https://pastebin.com/ZQzw4tBr"))()
+end)
+
+btnsss:Button("Anti Admins (ENABLE)", function()
+loadstring(game:HttpGet("https://pastebin.com/Xj8TFkqF"))()
+end)
+
+btnsss:Button("Chat Spy", function()
+loadstring(game:HttpGet("https://pastebin.com/Xj8TFkqF"))()
+end)
     end,
  })
 
@@ -3383,10 +3526,10 @@ SaveManager:LoadAutoloadConfig()
         
         local Window = Fluent:CreateWindow({
             Title = "Criminality " .. Fluent.Version,
-            SubTitle = "by TheMeetly",
+            SubTitle = "Sigma.",
             TabWidth = 160,
             Size = UDim2.fromOffset(580, 460),
-            Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+            Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
             Theme = "Rose",
             MinimizeKey = Enum.KeyCode.LeftAlt-- Used when theres no MinimizeKeybind
         })
@@ -3708,6 +3851,15 @@ local Button = MainTab:CreateButton({
     end,
 })
 
+local Button = MainTab:CreateButton({
+    Name = "Arsenal GUI",
+    Callback = function()
+        -- Script to execute when the button is pressed
+        local scriptUrl = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/DatMxkey/Nexware/main/loader.lua"))()'
+        loadstring(game:HttpGet(scriptUrl))()  -- Load and execute the script
+    end,
+})
+
  
  ---[SENCOND SECTION]---
 
@@ -3794,6 +3946,168 @@ local Button = MainTab:CreateButton({
     end,
  })
 
+ local Button = TeleportTab:CreateButton({
+    Name = "Invisible toggle",
+    Callback = function()
+        local ScriptStarted = false
+local Keybind = "E" --Set to whatever you want, has to be the name of a KeyCode Enum.
+local Transparency = true --Will make you slightly transparent when you are invisible. No reason to disable.
+local NoClip = false --Will make your fake character no clip.
+ 
+local Player = game:GetService("Players").LocalPlayer
+local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
+ 
+local IsInvisible = false
+ 
+RealCharacter.Archivable = true
+local FakeCharacter = RealCharacter:Clone()
+local Part
+Part = Instance.new("Part", workspace)
+Part.Anchored = true
+Part.Size = Vector3.new(200, 1, 200)
+Part.CFrame = CFrame.new(0, -500, 0) --Set this to whatever you want, just far away from the map.
+Part.CanCollide = true
+FakeCharacter.Parent = workspace
+FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+ 
+for i, v in pairs(RealCharacter:GetChildren()) do
+  if v:IsA("LocalScript") then
+      local clone = v:Clone()
+      clone.Disabled = true
+      clone.Parent = FakeCharacter
+  end
+end
+if Transparency then
+  for i, v in pairs(FakeCharacter:GetDescendants()) do
+      if v:IsA("BasePart") then
+          v.Transparency = 0.7
+      end
+  end
+end
+local CanInvis = true
+function RealCharacterDied()
+  CanInvis = false
+  RealCharacter:Destroy()
+  RealCharacter = Player.Character
+  CanInvis = true
+  isinvisible = false
+  FakeCharacter:Destroy()
+  workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+ 
+  RealCharacter.Archivable = true
+  FakeCharacter = RealCharacter:Clone()
+  Part:Destroy()
+  Part = Instance.new("Part", workspace)
+  Part.Anchored = true
+  Part.Size = Vector3.new(200, 1, 200)
+  Part.CFrame = CFrame.new(9999, 9999, 9999) --Set this to whatever you want, just far away from the map.
+  Part.CanCollide = true
+  FakeCharacter.Parent = workspace
+  FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+ 
+  for i, v in pairs(RealCharacter:GetChildren()) do
+      if v:IsA("LocalScript") then
+          local clone = v:Clone()
+          clone.Disabled = true
+          clone.Parent = FakeCharacter
+      end
+  end
+  if Transparency then
+      for i, v in pairs(FakeCharacter:GetDescendants()) do
+          if v:IsA("BasePart") then
+              v.Transparency = 0.7
+          end
+      end
+  end
+ RealCharacter.Humanoid.Died:Connect(function()
+ RealCharacter:Destroy()
+ FakeCharacter:Destroy()
+ end)
+ Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+end
+RealCharacter.Humanoid.Died:Connect(function()
+ RealCharacter:Destroy()
+ FakeCharacter:Destroy()
+ end)
+Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+local PseudoAnchor
+game:GetService "RunService".RenderStepped:Connect(
+  function()
+      if PseudoAnchor ~= nil then
+          PseudoAnchor.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+      end
+       if NoClip then
+      FakeCharacter.Humanoid:ChangeState(11)
+       end
+  end
+)
+ 
+PseudoAnchor = FakeCharacter.HumanoidRootPart
+local function Invisible()
+  if IsInvisible == false then
+      local StoredCF = RealCharacter.HumanoidRootPart.CFrame
+      RealCharacter.HumanoidRootPart.CFrame = FakeCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.CFrame = StoredCF
+      RealCharacter.Humanoid:UnequipTools()
+      Player.Character = FakeCharacter
+      workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
+      PseudoAnchor = RealCharacter.HumanoidRootPart
+      for i, v in pairs(FakeCharacter:GetChildren()) do
+          if v:IsA("LocalScript") then
+              v.Disabled = false
+          end
+      end
+ 
+      IsInvisible = true
+  else
+      local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
+      FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
+ 
+      RealCharacter.HumanoidRootPart.CFrame = StoredCF
+ 
+      FakeCharacter.Humanoid:UnequipTools()
+      Player.Character = RealCharacter
+      workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+      PseudoAnchor = FakeCharacter.HumanoidRootPart
+      for i, v in pairs(FakeCharacter:GetChildren()) do
+          if v:IsA("LocalScript") then
+              v.Disabled = true
+          end
+      end
+      IsInvisible = false
+  end
+end
+ 
+game:GetService("UserInputService").InputBegan:Connect(
+  function(key, gamep)
+      if gamep then
+          return
+      end
+      if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
+          if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
+              Invisible()
+          end
+      end
+  end
+)
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://232127604"
+Sound:Play()
+game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Invisible Toggle Loaded",["Text"] = "Press "..Keybind.." to become change visibility.",["Duration"] = 20,["Button1"] = "Okay."})
+ 
+
+    end,
+ })
+
+ local Button = TeleportTab:CreateButton({
+    Name = "WallBang",
+    Callback = function()
+        game:service[[Workspace]]:FindFirstChild('Map'):FindFirstChild('Parts'):FindFirstChild('M_Parts').Parent = game:service[[Workspace]]:FindFirstChild('Characters')
+ 
+    end,
+ })
+ 
+
  local PhantomTab = Window:CreateTab("Info", nil) -- Title, Image
  local PhantomSection = PhantomTab:CreateSection("what do i do?")
 
@@ -3807,3 +4121,18 @@ local Button = MainTab:CreateButton({
 
         local Paragraph = PhantomTab:CreateParagraph({Title = "What is The strongest sigma grounds?", Content = "it is mostly teleports"})
 
+        local Paragraph = PhantomTab:CreateParagraph({Title = "(NEW) What is this ''WallBang'' Script?", Content = "WallBang is a script that lets you shot thru a wall which can help in many Situations. Such as ''if someone locks you out of a building you can just shoot them thru the door or the wall.''"})
+
+        local Paragraph = PhantomTab:CreateParagraph({Title = "(NEW) What is a Invisible toggle script?", Content = "It is just what it says in the name its a script that makes you invisible but unable to shoot so you cant shoot but they cant see you or shoot you (THE TOGGLE BUTTON IS E)"})
+
+        local Paragraph = PhantomTab:CreateParagraph({Title = "(NEW) What is CrimSkid Hub?", Content = "CrimSkid Is just a Cheat hub. Some of its script work some dont as simple as that"})
+
+        local UpdateTab = Window:CreateTab("Update Logs", nil) -- Title, Image
+ local UpdateSection = UpdateTab:CreateSection("UPDATASSS!")
+
+ local Paragraph = UpdateTab:CreateParagraph({Title = "What's new?", Content = "I have added a WallBang Script, Invisible toggle script and a Crimskid Hub button."})
+
+ local Paragraph = UpdateTab:CreateParagraph({Title = "What errors are trying to get fixed?", Content = "I'm currently working on making the Arsenal script work as a button. And im trying to fix the gun blur when you open the script."})
+
+ local Paragraph = UpdateTab:CreateParagraph({Title = ". . .", Content = "All info about these scripts are in the info section if you wonder what they are."})
+    
